@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="src/images/logo.png" type="image/x-icon"> <!-- Add your favicon here -->
+    <title>Liimoji™</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #2c2c2c; /* Dark gray background */
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header, footer {
+            background-color: #1a1a1a; /* Darker gray for header and footer */
+            color: #ccc; /* Light gray text */
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        .container {
+            flex: 1; /* This allows the image to fill the middle space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Liimoji™, COMING soon</h1>
+    </header>
+
+    
+    <div class="container">
+        <img src="src/images/Liimoji.jpg" alt="Liimoji">
+        <div class="centered-text">Liimoji™, COMING soon</div>
+    </div>
+
+    <footer>
+        &copy; 2024 Liimoji. All rights reserved.
+    </footer>
+
+</body>
+</html>
