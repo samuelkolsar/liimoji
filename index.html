@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="src/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="src/images/Liimoji2.png" type="image/x-icon">
     <title>Liimoji™</title>
     <style>
         body, html {
@@ -59,8 +59,18 @@
 
     
     <div class="container">
-        <img src="src/images/Liimoji3.jpg" alt="Liimoji">
+        <img id="myImage" src="src/images/Liimoji.jpg" alt="Liimoji">
         <div class="centered-text">Liimoji™, COMING soon</div>
+        <script>
+            const images = ["src/images/Liimoji.jpg", "src/images/Liimoji3.jpg", "src/images/liim.jpg"];
+            let index = 0;
+    
+            function changeImage() {
+                index = (index + 1) % images.length;
+                document.getElementById("myImage").src = images[index];
+            }
+            setInterval(changeImage, 9000); 
+        </script>
     </div>
 
     <footer>
